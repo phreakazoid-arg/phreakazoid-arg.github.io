@@ -50,6 +50,7 @@
         console.log("video and hls.js are now bound together !");
         hls.loadSource("http://10.255.253.92:1935/live/mapadenodos/playlist.m3u8");
         hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+	video.play();
         });
       });
     }
