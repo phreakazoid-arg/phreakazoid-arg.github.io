@@ -1,0 +1,170 @@
+<html>
+<head>
+	<title> ILA Silvus - Principal </title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+	<link rel="stylesheet" href="css/extras.css"/>
+	<script src="scripts/extras.js"></script>
+	
+	<script>
+				function getImagePath(){
+							  var d = new Date();
+							  var Today = d.getDate();
+							  var Month = d.getMonth();
+							  var src= "images/";
+							  if (Month === 2 && (Today === 9)) {
+								src += "logo02trans.gif";
+							  } else  {
+								src += "logo01trans.png";}
+							 
+				 return src;
+			   }
+			   window.onload = function(){
+				   
+				document.getElementById("Logo").src=getImagePath();
+			   };
+		  </script>
+
+</head>
+<body>
+
+	<ul>
+		  <li><p align=center><img id="Logo" width="70%" /></p></li>
+		  <li><a class="active" href="index.html">Principal</a></li>
+		  <li><a href="temperatura.html">Temperatura</a></li>
+		  <li><a href="mapadenodos.html">Estado de nodos</a></li>
+		  <li><a href="reboot.html">Reboot remoto</a></li>
+	  
+	</ul>
+
+	<div style="margin-left:20%;padding:1px 16px;">
+
+	  <div id="quote" style="left: 45%;top: 35%;;position: absolute;margin-right:30%;  font-weight: bold; font: italic small-caps bold 20px Georgia, serif;  text-align: center; "></div>
+	  <script>
+		(function() {
+		  var quotes = [
+			{
+			  text: "La inteligencia me persigue, pero yo soy más rápido",          
+			},{
+			  text: "Lo importante no es saber, sino tener el teléfono del que sabe",         
+			},{
+			  text: "Tener la conciencia limpia es señal de mala memoria",         
+			},{
+			  text: "Me niego a unirme a cualquier club que me aceptaría como miembro",         
+			},{
+			  text: "Nunca olvido una cara, pero en su caso, estaré encantado de hacer una excepción",         
+			},{
+			  text: "Suelo cocinar con vino, a veces incluso se lo agrego a la comida",         
+			},{
+			  text: "La verdad absoluta no existe, y esto es absolutamente cierto",         
+			},{
+			  text: "Es mejor callar y parecer estúpido que hablar y despejar las dudas",         
+			},{
+			  text: "Siempre recuerda que tú eres absolutamente único. Al igual que todos los demás",         
+			},{
+			  text: "Hay dos palabras que te abrirán muchas puertas: «tire» y «empuje»",         
+			},{
+			  text: "Cuándo una mujer te dice “¿qué?”, no es que no te haya escuchado. Te está dando la oportunidad de cambiar lo que dijiste",         
+			},{
+			  text: "El sexo es como jugar al truco. Si no tenes una buena compañia, más vale que tengas una buena mano",         
+			},{
+			  text: "El que nace pobre y feo, tiene grandes posibilidades de que al crecer... se le desarrollen ambas condiciones",         
+			},{
+			  text: "Hay un mundo mejor, pero es carísimo",         
+			},{
+			  text: "Me puedo resistir a todo menos a la tentación",         
+			},{
+			  text: "No soy un completo inútil, por lo menos sirvo de mal ejemplo",         
+			},{
+			  text: "Tengo que ir al oculista, pero nunca veo el momento",         
+			},{
+			  text: " Algunos matrimonios acaban bien, otros duran toda la vida",         
+			},{
+			  text: "Solo quería decirte que a alguien le importas. No a mí, pero a alguien seguro que sí",         
+			},{
+			  text: "No te preocupes, como mucho el peor día de tu vida solo durará 24 horas",         
+			},{
+			  text: "La indicación más clara que la vida inteligente existe en otro sitio del universo es que nunca ha intentado establecer contacto con nosotros",         
+			},{
+			  text: "Estos son mis principios. Si no le gustan, tengo otros",         
+			},{
+			  text: "Ahorra agua. No te duches solo",         
+			},{
+			  text: "Hijo mío, la felicidad está hecha de pequeñas cosas: Un pequeño yate, una pequeña mansión, una pequeña fortuna…",         
+			},{
+			  text: "Siempre quise ser alguien, pero ahora me doy cuenta que debería haber sido más específico..",         
+			},{
+			  text: "Solía pensar que soy indeciso, pero ahora no estoy seguro",         
+			},{
+			  text: "Mi mujer y yo fuimos felices durante 20 años. Luego, nos conocimos",         
+			},{
+			  text: "Dejar de fumar es lo más fácil del mundo. Lo sé porque lo he hecho miles de veces",         
+			},{
+			  text: "Si vas a hacer algo esta noche de lo que te arrepentirás mañana por la mañana, duerme hasta tarde",         
+			},{
+			  text: "El matrimonio es la principal causa del divorcio",         
+			},{
+			  text: "Mi abuela comenzó a caminar 2 kilometros al día cuando tenía sesenta años. Ahora tiene noventa y siete, y no sabemos en dónde demonios está",         
+			},{
+			  text: "El problema de tener una mente abierta es, por supuesto, que la gente insiste en tratar de poner cosas en ella",         
+			},{
+			  text: "Mi psiquiatra me dijo que estaba loco; pedí una segunda opinión y me dijo que también era feo",         
+			},{
+			  text: "Dos cosas son seguras: el universo y la estupidez humana; y no estoy seguro de la primera",         
+			},{
+			  text: "Los niños son más inteligentes que cualquiera de nosotros. ¿Sabes cómo lo sé? No conozco a un solo niño con un trabajo a tiempo completo y niños",         
+			},{
+			  text: "Pienso vivir para siempre o morir en el intento",         
+			},{
+			  text: "Me gustan los largos paseos, especialmente cuando los toma gente molesta",         
+			},{
+			  text: "Creo que he encontrado el eslabón perdido entre el animal y el hombre civilizado. Somos nosotros",         
+			},{
+			  text: "Esas personas que creen que lo saben todo son una verdadera molestia para aquellos que lo sabemos todo",         
+			},{
+			  text: "Me puse a dieta, juré que no volvería a beber ni a comer con exceso y en catorce días había perdido dos semanas ",         
+			},{
+			  text: "Todo el mundo tiene un propósito en la vida. Quizás el de algunos sea dormir la siesta",         
+			},{
+			  text: "Cuando era pequeño me dijeron que cualquier persona podía llegar a presidente. Hoy empiezo a ceer que es verdad",         
+			},{
+			  text: "Madrugar está sobrevalorado",         
+			},{
+			  text: "No conoces el poder del lado oscuro",         
+			},{
+			  text: "El que madruga, encuentra todo cerrado..",         
+			},{
+			  text: "Frase en reparacion por falta de imaginacion",         
+			},{
+			  text: "Noches de desenfreno, mañanas de ibuprofeno",         
+			},{
+			  text: "El que rie ultimo...no entendio el chiste",         
+			},{
+			  text: "Espacio publicitario disponible para contratacion :)",         
+			},{
+			  text: "Odio ser bipolar, es genial!",         
+			},{
+			  text: "Si no puedes ser insustituible, hazte inolvidable",         
+			},{
+			  text: "Tenía respuestas buenísimas para las preguntas que no me han hecho",         
+			},{
+			  text: "Si no puedes convencerlos, confúndelos",         
+			},{
+			  text: "No busques problemas. Ellos te encontrarás a ti",         
+			},{
+			  text: "Lo malo de vivir en la nubes, es que a veces hay que bajar",         
+			},{
+			  text: "Un buen truco para parecer diez años más joven es decir que tienes diez años más",         
+			}		 
+		  ];
+		  var quote = quotes[Math.floor(Math.random() * quotes.length)];
+		  document.getElementById("quote").innerHTML =
+			'<p>' + quote.text + '</p>';
+		})();
+	  </script>
+	  
+	</div>
+
+</body>
+
+</html>

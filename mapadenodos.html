@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title> ILA Silvus - Mapa de Nodos </title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+	<link rel="stylesheet" href="css/extras.css"/>
+	<script src="scripts/extras.js"></script>
+
+		<script>
+
+				function getImagePath(){
+							  var d = new Date();
+							  var Today = d.getDate();
+							  var Month = d.getMonth();
+							  var src= "images/";
+							  if (Month === 2 && (Today === 9)) {
+								src += "logo02trans.gif";
+							  } else  {
+								src += "logo01trans.png";}
+							 
+				 return src;
+			   }
+			   window.onload = function(){
+				   
+				document.getElementById("Logo").src=getImagePath();
+			   };
+		  </script>
+		
+</head>
+<body>
+
+<ul>
+  <li><p align=center><img id="Logo" width="70%" /></p></li>  
+  <li><a href="index.html">Principal</a></li>
+  <li><a href="temperatura.html">Temperatura</a></li>
+  <li><a class="active" href="mapadenodos.html">Estado de nodos</a></li>
+  <li><a href="reboot.html">Reboot remoto</a></li>
+  
+</ul>
+
+<div style="margin-left:20%;padding:1px 16px;">
+ <video id="mapaNod" preload="none" type='application/x-mpegURL'"></video>
+  <script>
+    if (Hls.isSupported()) {
+      var video = document.getElementById('mapaNod');
+      var hls = new Hls();
+      // bind them together
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+        console.log("video and hls.js are now bound together !");
+        hls.loadSource("http://10.255.253.92:1935/live/mapadenodos/playlist.m3u8");
+        hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+        });
+      });
+    }
+  </script>
+ 
+
+</div>
+
+</body>
+</html>

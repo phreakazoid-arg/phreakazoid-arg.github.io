@@ -1,0 +1,163 @@
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="css/extras.css"/>
+	<script src="scripts/extras.js"></script>
+
+	
+		 <script>
+			$(window.open).onpageshow = function() {
+			 window.close();
+			};
+		 </script>
+		 <script>
+
+				function getImagePath(){
+							  var d = new Date();
+							  var Today = d.getDate();
+							  var Month = d.getMonth();
+							  var src= "images/";
+							  if (Month === 2 && (Today === 9)) {
+								src += "logo02trans.gif";
+							  } else  {
+								src += "logo01trans.png";}
+							 
+				 return src;
+			   }
+			   window.onload = function(){
+				   
+				document.getElementById("Logo").src=getImagePath();
+			   };
+		  </script>
+</head>
+<body>
+<ul>
+<li><p align=center><img id="Logo" width="70%" /></p></li>
+  <li><a href="index.html">Principal</a></li>
+  <li><a href="temperatura.html">Temperatura</a></li>
+  <li><a href="mapadenodos.html">Estado de nodos</a></li>
+  <li><a class="active" href="reboot.html">Reboot remoto</a></li>
+  
+</ul>
+<!-- /secureinterface3.sh?reboot=Reboot -->
+
+<div style="margin-left:20%;padding:1px 16px;">
+<h1>Mitre-Suarez</h1>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/RetAnd.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;" >Retiro Andenes</button>
+
+  
+  <button style="width:25%" onclick="window.open('reboot/RetCabin.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Retiro Cabin</button>
+  <button style="width:25%" onclick="window.open('reboot/Autopista.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Autopista</button>
+  <button style="width:25%" onclick="window.open('reboot/ATCQuiroga.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">ATC Quiroga</button>
+</div>
+
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/CLIBA.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">CLIBA</button>
+  <button style="width:25%" onclick="window.open('reboot/SubEstPal.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Sub Est Palermo</button>
+  <button style="width:25%" onclick="window.open('reboot/EmpMald.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Emp Maldonado</button>
+  <button style="width:25%" onclick="window.open('reboot/GEBA2.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">GEBA 2</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/TresFeb.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">3 de Febrero</button>
+  <button style="width:25%" onclick="window.open('reboot/Huergo.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Huergo</button>
+  <button style="width:25%" onclick="window.open('reboot/Dorrego.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Dorrego</button>
+  <button style="width:25%" onclick="window.open('reboot/ConcepArenal.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Concep Arenal</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/Newbery.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Newbery</button>
+  <button style="width:25%" onclick="window.open('reboot/Zabala.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Zabala</button>
+  <button style="width:25%" onclick="window.open('reboot/VirreyAv.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Virrey Aviles</button>
+  <button style="width:25%" onclick="window.open('reboot/Juramento.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Juramento</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/Olazabal.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Olazabal</button>
+  <button style="width:25%" onclick="window.open('reboot/MonrSuar.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Monroe-Suarez</button>
+  <button style="width:25%" onclick="window.open('reboot/Drago.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Drago</button>
+  <button style="width:25%" onclick="window.open('reboot/Miller.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Miller</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/CabUrqui.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Cabin Urquiza</button>
+  <button style="width:25%" onclick="window.open('reboot/Consti.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Constituyentes</button>
+  <button style="width:25%" onclick="window.open('reboot/CabPuey.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Cabin Pueyrredon</button>
+  <button style="width:25%" onclick="window.open('reboot/GralPaz.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Gral Paz</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/Migue1.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Miguelete 1</button>
+  <button style="width:25%" onclick="window.open('reboot/Migue2.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Miguelete 2</button>
+  <button style="width:25%" onclick="window.open('reboot/GralSavio.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Gral Savio</button>
+  <button style="width:25%" onclick="window.open('reboot/Puey.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Pueyrredon</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/JMCampos.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">J M Campos</button>
+  <button style="width:25%" onclick="window.open('reboot/ODonell.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">O'Donell</button>
+  <button style="width:25%" onclick="window.open('reboot/SanLorenzo.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">San Lorenzo</button>
+  <button style="width:25%" onclick="window.open('reboot/CabSuarez.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Cabin Suarez</button>
+</div>
+<h1>Mitre-Mitre</h1>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/MonrMitre.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Monroe-Mitre</button>
+  <button style="width:25%" onclick="window.open('reboot/Quesada.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Quesada</button>
+  <button style="width:25%" onclick="window.open('reboot/Plaza.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Plaza 3200</button>
+  <button style="width:25%" onclick="window.open('reboot/Saavedra.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Saavedra</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/PteBelgrano.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Puente Belgrano</button>
+  <button style="width:25%" onclick="window.open('reboot/JBJusto.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">JB Justo</button>
+  <button style="width:25%" onclick="window.open('reboot/Florida.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Florida</button>
+  <button style="width:25%" onclick="window.open('reboot/Cetrangolo.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Cetrangolo</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:50%" onclick="window.open('reboot/25deMayo.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">25 de Mayo</button>
+  <button style="width:50%" onclick="window.open('reboot/Mitre.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Mitre</button>
+  
+</div>
+<h1>Mitre-Tigre</h1>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/EmpMaldonado.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Empalme Maldonado</button>
+  <button style="width:25%" onclick="window.open('reboot/GebaTigre.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">GEBA Tigre</button>
+  <button style="width:25%" onclick="window.open('reboot/HQuiroga.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Horacio Quiroga</button>
+  <button style="width:25%" onclick="window.open('reboot/CLarralde.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Crisologo Larralde</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/Zufria.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Zufriategui</button>
+  <button style="width:25%" onclick="window.open('reboot/Melo.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Carlos F Melo</button>
+  <button style="width:25%" onclick="window.open('reboot/Alberdi.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Alberdi</button>
+  <button style="width:25%" onclick="window.open('reboot/Pelliza.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Pelliza</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/Acassuso.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Tunel Acassuso</button>
+  <button style="width:25%" onclick="window.open('reboot/DiazVelez.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Diaz Velez</button>
+  <button style="width:25%" onclick="window.open('reboot/Pacheco.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">General Pacheco</button>
+  <button style="width:25%" onclick="window.open('reboot/VLopez.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Vicente Lopez</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/Guemes.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">General Güemes</button>
+  <button style="width:25%" onclick="window.open('reboot/EdelCampo.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Estanislao del Campo</button>
+  <button style="width:25%" onclick="window.open('reboot/EDiaz.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Estanislao Diaz</button>
+  <button style="width:25%" onclick="window.open('reboot/Espana.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">España</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/Ayacucho.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Ayacucho</button>
+  <button style="width:25%" onclick="window.open('reboot/33Orient.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">33 Orientales</button>
+  <button style="width:25%" onclick="window.open('reboot/French.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">French</button>
+  <button style="width:25%" onclick="window.open('reboot/EstVict.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Est Victoria</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('reboot/SubEstVict.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Sub Est Victoria</button>
+  <button style="width:25%" onclick="window.open('reboot/GuidoSpano.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Guido Spano</button>
+  <button style="width:25%" onclick="window.open('reboot/Arenales.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Arenales</button>
+  <button style="width:25%" onclick="window.open('reboot/Ruta202.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Ruta 202</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:33%" onclick="window.open('reboot/Ruta197.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Ruta 197</button>
+  <button style="width:33%" onclick="window.open('reboot/DRocha.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Dardo Rocha</button>
+  <button style="width:34%" onclick="window.open('reboot/Tigre.html','_Blank','width=350,height=150,scrollbars=no,menubar=no'); return false;">Tigre</button>
+</div>
+
+
+
+</div> <!-- cierra div principal -->
+</body>
+</html>

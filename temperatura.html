@@ -1,0 +1,162 @@
+<html>
+<head>
+	<title> ILA Silvus - Temperatura </title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/extras.css"/>
+	<script src="scripts/extras.js"></script>
+
+	<script>
+		function getImagePath(){
+		  var d = new Date();
+		  var Today = d.getDate();
+		  var Month = d.getMonth();
+		  var src= "images/";
+		  if (Month === 2 && (Today === 9)) {
+			src += "logo02trans.gif";
+			  } else  {
+				src += "logo01trans.png";}
+				 return src;
+			   }
+		  window.onload = function(){
+			document.getElementById("Logo").src=getImagePath();
+			   };
+	  </script>
+
+</head>
+<body>
+
+<ul>
+  <li><p align=center><img id="Logo" width="70%" /></p></li>
+  <li><a href="index.html">Principal</a></li>
+  <li><a class="active" href="temperatura.html">Temperatura</a></li>
+  <li><a href="mapadenodos.html">Estado de nodos</a></li>
+  <li><a href="reboot.html">Reboot remoto</a></li>
+  
+</ul>
+
+<div style="margin-left:20%;padding:1px 16px;">
+
+
+<!-- /tempLog.html -->
+
+<h1>Mitre-Suarez</h1>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.103.202/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;" >Retiro Andenes</button>
+
+  
+  <button style="width:25%" onclick="window.open('http://172.19.103.204/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Retiro Cabin</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.6/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Autopista</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.12/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">ATC Quiroga</button>
+</div>
+
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.103.18/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">CLIBA</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.20/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Sub Est Palermo</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.21/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Emp Maldonado</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.22/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">GEBA 2</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.103.23/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">3 de Febrero</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.24/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Huergo</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.30/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Dorrego</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.33/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Concep Arenal</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.103.36/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Newbery</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.40/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Zabala</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.41/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Virrey Aviles</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.43/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Juramento</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.103.45/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Olazabal</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.46/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Monroe-Suarez</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.47/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Drago</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.103/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Miller</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.103.104/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Cabin Urquiza</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.107/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Constituyentes</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.108/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Cabin Pueyrredon</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.58/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Gral Paz</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.103.61/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Miguelete 1</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.62/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Miguelete 2</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.63/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Gral Savio</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.65/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Pueyrredon</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.103.68/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">J M Campos</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.72/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">O'Donell</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.75/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">San Lorenzo</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.78/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Cabin Suarez</button>
+</div>
+<h1>Mitre-Mitre</h1>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.103.81/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Monroe-Mitre</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.84/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Quesada</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.85/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Plaza 3200</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.87/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Saavedra</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.103.90/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Puente Belgrano</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.93/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">JB Justo</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.95/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Florida</button>
+  <button style="width:25%" onclick="window.open('http://172.19.103.99/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Cetrangolo</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:50%" onclick="window.open('http://172.19.103.101/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">25 de Mayo</button>
+  <button style="width:50%" onclick="window.open('http://172.19.103.102/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Mitre</button>
+  
+</div>
+<h1>Mitre-Tigre</h1>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.100.205/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Empalme Maldonado</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.6/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">GEBA Tigre</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.17/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Horacio Quiroga</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.19/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Crisologo Larralde</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.100.22/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Zufriategui</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.24/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Carlos F Melo</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.30/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Alberdi</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.34/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Pelliza</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.100.35/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Tunel Acassuso</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.37/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Diaz Velez</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.39/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">General Pacheco</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.41/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Vicente Lopez</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.100.43/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">General Güemes</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.46/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Estanislao del Campo</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.51/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Estanislao Diaz</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.52/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">España</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.100.54/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Ayacucho</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.56/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">33 Orientales</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.57/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">French</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.59/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Est Victoria</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:25%" onclick="window.open('http://172.19.100.62/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Sub Est Victoria</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.64/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Guido Spano</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.67/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Arenales</button>
+  <button style="width:25%" onclick="window.open('http://172.19.100.68/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Ruta 202</button>
+</div>
+<div class="btn-group" style="width:100%">
+  <button style="width:33%" onclick="window.open('http://172.19.100.72/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Ruta 197</button>
+  <button style="width:33%" onclick="window.open('http://172.19.100.74/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Dardo Rocha</button>
+  <button style="width:34%" onclick="window.open('http://172.19.100.75/tempLog.html','_Blank','width=350,height=180,scrollbars=no,menubar=no'); return false;">Tigre</button>
+</div>
+
+
+
+ 
+
+</div>
+
+</body>
+</html>
